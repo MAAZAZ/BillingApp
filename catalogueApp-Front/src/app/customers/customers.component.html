@@ -1,0 +1,44 @@
+<br>
+<div class="container">
+  <flash-messages></flash-messages>
+</div>
+<div class="col-md-12">
+  <h2 style="margin: auto"> Customer Details</h2>
+  <div class="text-right my-2">
+    <button class="btn btn-info" routerLink="/customers/add">Add new customer</button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of customers">
+      <td>
+        {{p.customerId}}
+      </td>
+      <td>
+        {{p.name}}
+        <div class="col-md-6" *ngIf="edithidden && p.customerId==key">
+          <input class="form-control" type="text"  [(ngModel)]="p.name">
+        </div>
+      </td>
+      <td>
+        {{p.email}}
+        <div class="col-md-6" *ngIf="edithidden && p.customerId==key">
+          <input class="form-control" type="text"  [(ngModel)]="p.email">
+        </div>
+      </td>
+      <td>
+        <button *ngIf="!edithidden" class="btn btn-success" (click)="ChangeStatus(p.customerId)">Edit</button> &nbsp;
+        <button *ngIf="edithidden" class="btn btn-success" (click)="editCustomer(p)">Save</button> &nbsp;&nbsp;
+        <button class="btn btn-danger" (click)="deleteCustomer(p.customerId)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-01-24T19:58:36</date>
+  <millis>1611518316769</millis>
+  <sequence>0</sequence>
+  <logger>kafkadotnetconsumer.demo.KafkaConsumer</logger>
+  <level>INFO</level>
+  <class>kafkadotnetconsumer.demo.KafkaConsumer</class>
+  <method>onMessage</method>
+  <thread>30</thread>
+  <message>Update customer from {"CustomerId":1,"Name":"Maazaz zakaria","Email":"maazaz.zakaria@gmail.com"} to {"CustomerId":1,"Name":"Maazaz zakaria","Email":"maazaz.zakaria@gmail.com"}</message>
+</record>
+<record>
+  <date>2021-01-24T20:02:04</date>
+  <millis>1611518524005</millis>
+  <sequence>1</sequence>
+  <logger>kafkadotnetconsumer.demo.KafkaConsumer</logger>
+  <level>INFO</level>
+  <class>kafkadotnetconsumer.demo.KafkaConsumer</class>
+  <method>onMessage</method>
+  <thread>30</thread>
+  <message>Add customer : {"CustomerId":3,"Name":"Enset media","Email":"enset7media@gmail.com"}</message>
+</record>
+<record>
+  <date>2021-01-24T20:09:35</date>
+  <millis>1611518975177</millis>
+  <sequence>2</sequence>
+  <logger>kafkadotnetconsumer.demo.KafkaConsumer</logger>
+  <level>INFO</level>
+  <class>kafkadotnetconsumer.demo.KafkaConsumer</class>
+  <method>onMessage</method>
+  <thread>30</thread>
+  <message>Add product : {"ProductID":4,"Name":"product1","Price":400.0,"categoryID":1,"category":null}</message>
+</record>
+<record>
+  <date>2021-01-24T20:13:07</date>
+  <millis>1611519187933</millis>
+  <sequence>3</sequence>
+  <logger>kafkadotnetconsumer.demo.KafkaConsumer</logger>
+  <level>INFO</level>
+  <class>kafkadotnetconsumer.demo.KafkaConsumer</class>
+  <method>onMessage</method>
+  <thread>30</thread>
+  <message>Update category from {"CategoryID":1,"Name":"Ordinateur","products":null} to {"CategoryID":1,"Name":"Ordinateur","products":null}</message>
+</record>
+<record>
+  <date>2021-01-24T20:16:57</date>
+  <millis>1611519417404</millis>
+  <sequence>4</sequence>
+  <logger>kafkadotnetconsumer.demo.KafkaConsumer</logger>
+  <level>INFO</level>
+  <class>kafkadotnetconsumer.demo.KafkaConsumer</class>
+  <method>onMessage</method>
+  <thread>30</thread>
+  <message>Delete customer : {"CustomerId":3,"Name":"Enset media","Email":"enset7media@gmail.com"}</message>
+</record>

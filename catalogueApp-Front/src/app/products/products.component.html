@@ -1,0 +1,33 @@
+<br>
+<div class="container">
+  <flash-messages></flash-messages>
+</div>
+<div class="col-md-12">
+  <h2 style="margin: auto"> Product Details</h2>
+  <div class="text-right my-2">
+    <button class="btn btn-info" routerLink="/products/add">Add new product</button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{p.productID}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.category}}</td>
+      <td>
+        <button class="btn btn-success" routerLink="/products/edit/{{p.productID}}">Edit</button> &nbsp;
+        <button class="btn btn-danger" (click)="deleteProduct(p.productID)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
