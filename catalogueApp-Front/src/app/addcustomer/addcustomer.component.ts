@@ -11,7 +11,7 @@ import {CustomerService} from "../services/customers/customer.service";
 })
 export class AddcustomerComponent implements OnInit {
 
-  customer:any={id:0,name:"",email:""};
+  customer:any={customerID:0,name:"",email:""};
 
   constructor(private customerService: CustomerService, private route: Router, private flash: FlashMessagesService) {
   }
